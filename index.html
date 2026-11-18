@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mazher Hussain | Test Lead · Data Migration &amp; Release Assurance</title>
+  <meta name="description" content="Executive portfolio of Mazher Hussain — Test Lead | Data Migration & Release Assurance in Wellington, New Zealand. 14+ years leading QA across government, banking, payments, SaaS migration, and enterprise transformation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-[#040914] text-slate-100 antialiased selection:bg-teal-500 selection:text-slate-950">
+
+  <!-- Top Scroll Progress Bar -->
+  <div id="progressBar" class="progress-bar" aria-hidden="true"></div>
+
+  <!-- Sticky Responsive Header (Fixed Defect #1: Zero overflow at 320px-404px viewports) -->
+  <header id="siteHeader" class="sticky top-0 z-40 w-full max-w-full overflow-x-clip bg-[#040914]/90 backdrop-blur-md border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 h-16 flex items-center justify-between gap-2">
+      <!-- Brand Identity -->
+      <a href="#hero" class="min-w-0 flex-1 flex items-center gap-2.5 group focus:outline-none">
+        <div class="w-8 h-8 rounded-lg bg-teal-500/15 border border-teal-400/40 flex items-center justify-center shrink-0">
+          <span class="font-display font-extrabold text-sm text-teal-300">MH</span>
+        </div>
+        <div class="min-w-0 truncate">
+          <div class="font-display font-bold text-sm sm:text-base text-white truncate">Mazher Hussain</div>
+          <div class="font-mono-kicker text-[10px] text-teal-400 truncate">Test Lead · Data Migration &amp; Release Assurance</div>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav aria-label="Primary Navigation" class="hidden xl:flex items-center gap-6 text-xs font-semibold text-slate-300">
+        <a href="#work" class="hover:text-teal-300 transition-colors">Selected Work</a>
+        <a href="#qa-lab" class="hover:text-teal-300 transition-colors">QA Lab</a>
+        <a href="#global-footprint" class="hover:text-teal-300 transition-colors">9-Country Footprint</a>
+        <a href="#timeline" class="hover:text-teal-300 transition-colors">Career Timeline</a>
+        <a href="#credentials" class="hover:text-teal-300 transition-colors">Credentials &amp; Logos</a>
+        <a href="#contact" class="hover:text-teal-300 transition-colors">Contact</a>
+      </nav>
+
+      <!-- Action Controls (Compact & guaranteed inside 320px-404px screens) -->
+      <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
+        <button
+          id="openCmdPaletteBtn"
+          type="button"
+          aria-label="Open Quick Search (Ctrl+K or /)"
+          class="px-2.5 sm:px-3 py-1.5 rounded-lg bg-slate-900/90 hover:bg-slate-800 border border-slate-700/80 text-slate-200 flex items-center gap-1.5 text-xs font-medium transition-colors shrink-0"
+        >
+          <svg class="w-3.5 h-3.5 text-teal-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m1.85-5.15a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+          <span>Search</span>
+          <kbd class="hidden sm:inline-block px-1.5 py-0.5 text-[10px] font-mono-kicker bg-slate-950 text-slate-400 rounded border border-slate-800">⌘K</kbd>
+        </button>
+
+        <button
+          id="headerCvBtn"
+          type="button"
+          onclick="openCvModal(this)"
+          class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-teal-500/15 hover:bg-teal-500/25 border border-teal-400/40 text-teal-200 text-xs font-semibold transition-colors shrink-0"
+        >
+          <span>Download CV</span>
+        </button>
+
+        <button
+          id="mobileMenuBtn"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobileNavDrawer"
+          class="xl:hidden px-2.5 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 text-xs font-semibold flex items-center gap-1 shrink-0"
+        >
+          <span id="mobileMenuBtnLabel">Menu ☰</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav id="mobileNavDrawer" aria-label="Mobile Navigation" class="hidden xl:hidden bg-[#060d1d] border-t border-slate-800 px-4 py-4 space-y-2">
+      <div class="grid grid-cols-2 gap-2 text-xs font-semibold">
+        <a href="#work" class="mobile-nav-link px-3 py-2 rounded-lg bg-slate-900/70 text-slate-200 hover:text-teal-300">01 · Selected Work</a>
+        <a href="#qa-lab" class="mobile-nav-link px-3 py-2 rounded-lg bg-slate-900/70 text-slate-200 hover:text-teal-300">02 · QA Lab</a>
+        <a href="#global-footprint" class="mobile-nav-link px-3 py-2 rounded-lg bg-slate-900/70 text-slate-200 hover:text-teal-300">03 · 9-Country Map</a>
+        <a href="#timeline" class="mobile-nav-link px-3 py-2 rounded-lg bg-slate-900/70 text-slate-200 hover:text-teal-300">04 · Career Timeline</a>
+        <a href="#credentials" class="mobile-nav-link px-3 py-2 rounded-lg bg-slate-900/70 text-slate-200 hover:text-teal-300">05 · Credentials</a>
+        <a href="#contact" class="mobile-nav-link px-3 py-2 rounded-lg bg-slate-900/70 text-slate-200 hover:text-teal-300">06 · Contact</a>
+      </div>
+      <div class="pt-2 border-t border-slate-800/80 flex items-center justify-between gap-2">
+        <button type="button" onclick="openCvModal(this)" class="w-full py-2 rounded-lg bg-teal-500 text-slate-950 font-bold text-xs text-center">
+          Download CV (Executive &amp; ATS Formats)
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+    <!-- ===================================================================== -->
+    <!-- SECTION 01: EXECUTIVE HERO ("SIGNAL TO SIGN-OFF")                     -->
+    <!-- ===================================================================== -->
+    <section id="hero" data-scene="01" data-scene-name="Hero" class="hero-ambient-bg relative pt-5 pb-10 lg:pt-8 lg:pb-12 border-b border-slate-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+
+        <!-- Two-Column Desktop / Unified Opening Block on Mobile -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center">
+
+          <!-- Left Column: Name, Role, Signal-to-Sign-off Bar, Compact Mobile Portrait, Supporting Line, CTAs, Proof Strip -->
+          <div class="lg:col-span-7 space-y-4 sm:space-y-5 mobile-hero-fade">
+
+            <!-- Location & Portfolio Positioning Eyebrow -->
+            <div class="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-slate-900/90 border border-teal-500/30 text-xs">
+              <img src="assets/country-flags/09-New-Zealand.png" alt="New Zealand Flag" class="w-4 h-3 object-cover rounded-[2px]" />
+              <span class="font-mono-kicker text-[10px] sm:text-[11px] text-teal-300 font-semibold">Wellington, New Zealand</span>
+              <span class="text-slate-600" aria-hidden="true">·</span>
+              <span class="text-[11px] text-slate-300 font-medium">Enterprise Government, Banking &amp; Cloud Transformation</span>
+            </div>
+
+            <!-- Primary Focal Point: Name & Executive Role Title -->
+            <div class="space-y-1.5">
+              <h1 class="font-display font-black text-4xl sm:text-5xl lg:text-[3.65rem] leading-[1.04] text-white tracking-tight">
+                Mazher Hussain
+              </h1>
+              <p class="font-display font-bold text-lg sm:text-2xl lg:text-[1.65rem] text-teal-300 leading-snug">
+                Test Lead <span class="text-slate-500 font-normal">|</span> Data Migration &amp; Release Assurance
+              </p>
+              <p class="font-mono-kicker text-[10px] sm:text-[11px] text-slate-400">
+                Test Lead · Data Migration Test Lead · Quality Assurance &amp; Release Governance
+              </p>
+            </div>
+
+            <!-- "Signal to Sign-off" One-Time Checkpoint Sequence (Validate -> Reconcile -> Release) -->
+            <div class="space-y-1.5">
+              <div class="flex items-center justify-between gap-2 max-w-xl">
+                <span class="font-mono-kicker text-[10px] text-teal-400/90 font-semibold flex items-center gap-1.5">
+                  <span class="inline-block w-1.5 h-1.5 rounded-full bg-teal-400"></span>
+                  Signal to Sign-off Methodology
+                </span>
+                <button
+                  id="replayRevealBtn"
+                  type="button"
+                  onclick="triggerSignalReveal(true)"
+                  class="font-mono-kicker text-[10px] text-slate-400 hover:text-teal-300 transition-colors"
+                  title="Replay the one-time Signal to Sign-off reveal"
+                >
+                  Replay Reveal ↻
+                </button>
+              </div>
+              <div class="signal-rail max-w-xl" role="group" aria-label="Signal to Sign-off Assurance Sequence: Validate, Reconcile, Release">
+                <div id="sigStep1" class="signal-step is-settled">
+                  <span class="signal-dot" aria-hidden="true"></span>
+                  <span>01 Validate</span>
+                </div>
+                <div id="sigConn1" class="signal-connector is-lit" aria-hidden="true">
+                  <div class="signal-connector-fill"></div>
+                </div>
+                <div id="sigStep2" class="signal-step is-settled">
+                  <span class="signal-dot" aria-hidden="true"></span>
+                  <span>02 Reconcile</span>
+                </div>
+                <div id="sigConn2" class="signal-connector is-lit" aria-hidden="true">
+                  <div class="signal-connector-fill"></div>
+                </div>
+                <div id="sigStep3" class="signal-step is-settled">
+                  <span class="signal-dot" aria-hidden="true"></span>
+                  <span>03 Release</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- COMPACT MOBILE PORTRAIT (Shown right inside the opening block on <1024px so name, role, portrait, supporting line & primary CTA appear together on first mobile screen!) -->
+            <div class="lg:hidden pt-1">
+              <div class="flex items-center gap-3.5 p-2.5 rounded-2xl bg-slate-900/85 border border-teal-500/30 shadow-lg">
+                <div class="w-20 h-24 sm:w-24 sm:h-28 rounded-xl overflow-hidden border border-teal-400/40 shrink-0 bg-slate-950">
+                  <img
+                    src="assets/portrait.jpg"
+                    alt="Mazher Hussain — Test Lead | Data Migration & Release Assurance"
+                    class="w-full h-full object-cover object-top"
+                  />
+                </div>
+                <div class="min-w-0 space-y-1">
+                  <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-teal-500/15 border border-teal-500/30 font-mono-kicker text-[9px] text-teal-300 font-semibold">
+                    NZSIS Confidential Clearance
+                  </div>
+                  <p class="text-xs text-slate-200 font-medium leading-snug">
+                    14+ years in IT &amp; QA · Five-person QA team leadership · Government &amp; banking delivery.
+                  </p>
+                  <div class="text-[11px] text-teal-300 font-mono-kicker">
+                    MBIE · One NZ · Co-op Bank · VUW
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Short Supporting Sentence (Exact Client Wording) -->
+            <p class="text-sm sm:text-base lg:text-[1.06rem] text-slate-200 leading-relaxed max-w-2xl font-normal">
+              I lead testing across government and banking transformations, from cloud migration and payment integrations to UAT and release readiness.
+            </p>
+
+            <!-- Two Clear Actions: View selected work (Primary) & Download CV (Secondary) -->
+            <div class="flex flex-wrap items-center gap-3 pt-1">
+              <a
+                href="#work"
+                id="heroPrimaryCta"
+                class="px-5 py-3 rounded-xl bg-teal-400 hover:bg-teal-300 text-slate-950 font-display font-bold text-sm sm:text-base shadow-lg shadow-teal-500/20 transition-all inline-flex items-center gap-2"
+              >
+                <span>View selected work</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </a>
+              <button
+                id="heroDownloadCvBtn"
+                type="button"
+                onclick="openCvModal(this)"
+                class="px-5 py-3 rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-slate-700 hover:border-teal-400/50 text-white font-display font-semibold text-sm sm:text-base transition-all inline-flex items-center gap-2"
+              >
+                <svg class="w-4 h-4 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg>
+                <span>Download CV</span>
+              </button>
+            </div>
+
+            <!-- Strongest Evidence Proof Strip (Desktop in-flow; Mobile below primary actions) -->
+            <div class="pt-1">
+              <div class="inline-flex flex-wrap items-center gap-x-3 gap-y-1.5 px-3.5 py-2.5 rounded-xl bg-slate-900/75 border border-slate-800 text-xs sm:text-sm font-medium text-slate-200">
+                <span class="inline-flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-teal-400"></span>
+                  <strong class="text-white">14+ years</strong> in IT &amp; QA
+                </span>
+                <span class="text-slate-600" aria-hidden="true">·</span>
+                <span class="inline-flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-sky-400"></span>
+                  <strong class="text-white">Five-person QA team</strong> leadership
+                </span>
+                <span class="text-slate-600" aria-hidden="true">·</span>
+                <span class="inline-flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                  <strong class="text-white">Government &amp; banking</strong> delivery
+                </span>
+              </div>
+            </div>
+
+            <!-- Regular Credentials Row using the 4 Custom Credential Badges (Replaces the old floating vertical ribbon) -->
+            <div class="pt-1 space-y-1.5" id="credentials">
+              <div class="font-mono-kicker text-[10px] text-slate-400">Verified Clearances &amp; Work Eligibility (Portfolio Graphics)</div>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                <div class="rounded-lg bg-slate-900/90 border border-slate-800/90 p-1 flex items-center justify-center hover:border-teal-500/40 transition-colors">
+                  <img src="assets/credential-badges/NZ-national-security-clearance.png" alt="NZ Security Clearance — Confidential · NZSIS vetting" class="w-full h-auto max-h-10 object-contain" />
+                </div>
+                <div class="rounded-lg bg-slate-900/90 border border-slate-800/90 p-1 flex items-center justify-center hover:border-teal-500/40 transition-colors">
+                  <img src="assets/credential-badges/NZ-Police-vetting.png" alt="NZ Police Vetting — Previously vetted" class="w-full h-auto max-h-10 object-contain" />
+                </div>
+                <div class="rounded-lg bg-slate-900/90 border border-slate-800/90 p-1 flex items-center justify-center hover:border-teal-500/40 transition-colors">
+                  <img src="assets/credential-badges/New-Zealand-citizenship.png" alt="New Zealand Citizen" class="w-full h-auto max-h-10 object-contain" />
+                </div>
+                <div class="rounded-lg bg-slate-900/90 border border-slate-800/90 p-1 flex items-center justify-center hover:border-teal-500/40 transition-colors">
+                  <img src="assets/credential-badges/Australian-work-rights.png" alt="Australian Work Rights — New Zealand citizen" class="w-full h-auto max-h-10 object-contain" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column (Desktop Portrait with Softly Lit Backdrop, Subtle Teal Edge Light & One-Time Frame Sweep) -->
+          <div class="hidden lg:flex lg:col-span-5 flex-col items-center justify-center">
+            <div class="relative w-full max-w-[390px]">
+              <!-- Ambient Teal Backlight Glow -->
+              <div class="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-teal-500/20 via-sky-500/15 to-transparent blur-2xl pointer-events-none" aria-hidden="true"></div>
+
+              <!-- Refined Portrait Frame -->
+              <div id="heroPortraitStage" class="portrait-stage sweep-active">
+                <div class="portrait-inner aspect-[4/4.6]">
+                  <img
+                    src="assets/portrait.jpg"
+                    alt="Mazher Hussain — Test Lead | Data Migration & Release Assurance"
+                  />
+                  <!-- Subtle bottom executive caption bar inside frame -->
+                  <div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-[#040914] via-[#040914]/85 to-transparent">
+                    <div class="flex items-center justify-between gap-2">
+                      <div>
+                        <div class="font-display font-bold text-sm text-white">Mazher Hussain</div>
+                        <div class="font-mono-kicker text-[10px] text-teal-300">Test Lead · Data Migration Test Lead</div>
+                      </div>
+                      <span class="px-2.5 py-1 rounded-full bg-teal-500/20 border border-teal-400/40 font-mono-kicker text-[10px] text-teal-200 font-semibold">
+                        Sign-off Ready
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- First-Screen Official Organisation Logos Grid (Displayed by Default!) -->
+        <div class="mt-6 pt-5 border-t border-slate-800/80">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+            <div class="font-mono-kicker text-[10px] sm:text-[11px] text-teal-300 font-semibold">
+              OFFICIAL ORGANISATION LOGOS · DELIVERED ACROSS NZ GOVERNMENT, BANKING, TELECOM &amp; HIGHER EDUCATION
+            </div>
+            <button
+              id="toggleLogoStyleBtn"
+              type="button"
+              onclick="toggleOrganisationLogoMode()"
+              class="font-mono-kicker text-[10px] text-slate-300 hover:text-teal-300 px-2.5 py-1 rounded bg-slate-900 border border-slate-700"
+            >
+              Showing: Official Organisation Logos (Switch to Minimal Text Tiles)
+            </button>
+          </div>
+
+          <!-- Official Organisation Reference Logos (DEFAULT VISIBLE — Real Logos + Clear Context Labels) -->
+          <div id="orgLogosRefGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            <!-- 1. MBIE -->
+            <div class="rounded-xl bg-slate-900/90 border border-slate-800 hover:border-teal-500/40 p-3 flex items-center gap-3.5 transition-colors">
+              <div class="w-28 h-12 rounded-lg bg-white p-1.5 flex items-center justify-center shrink-0 shadow-sm">
+                <img src="assets/organisation-logos-reference/MBIE.png" alt="MBIE Official Logo" class="max-h-9 w-auto object-contain" />
+              </div>
+              <div class="min-w-0">
+                <div class="font-display font-bold text-sm text-white truncate">MBIE</div>
+                <div class="text-[11px] text-slate-300 truncate">Ministry of Business, Innovation &amp; Employment</div>
+                <div class="font-mono-kicker text-[9px] text-teal-400 mt-0.5">Test Lead · Data Migration Test Lead</div>
+              </div>
+            </div>
+
+            <!-- 2. One NZ -->
+            <div class="rounded-xl bg-slate-900/90 border border-slate-800 hover:border-teal-500/40 p-3 flex items-center gap-3.5 transition-colors">
+              <div class="w-28 h-12 rounded-lg bg-white p-1.5 flex items-center justify-center shrink-0 shadow-sm">
+                <img src="assets/organisation-logos-reference/One-NZ.png" alt="One NZ Official Logo" class="max-h-10 w-auto object-contain" />
+              </div>
+              <div class="min-w-0">
+                <div class="font-display font-bold text-sm text-white truncate">One NZ</div>
+                <div class="text-[11px] text-slate-300 truncate">Telecommunications &amp; Enterprise Mobility</div>
+                <div class="font-mono-kicker text-[9px] text-teal-400 mt-0.5">Technical Test Lead (2019–2025)</div>
+              </div>
+            </div>
+
+            <!-- 3. Department of Conservation -->
+            <div class="rounded-xl bg-slate-900/90 border border-slate-800 hover:border-teal-500/40 p-3 flex items-center gap-3.5 transition-colors">
+              <div class="w-28 h-12 rounded-lg bg-white p-1.5 flex items-center justify-center shrink-0 shadow-sm">
+                <img src="assets/organisation-logos-reference/Department-of-Conservation.png" alt="Department of Conservation Official Logo" class="max-h-10 w-auto object-contain" />
+              </div>
+              <div class="min-w-0">
+                <div class="font-display font-bold text-sm text-white truncate">Department of Conservation</div>
+                <div class="text-[11px] text-slate-300 truncate">Te Papa Atawhai · Great Walks Platform</div>
+                <div class="font-mono-kicker text-[9px] text-teal-400 mt-0.5">Test Lead / QA Analyst</div>
+              </div>
+            </div>
+
+            <!-- 4. The Co-operative Bank -->
+            <div class="rounded-xl bg-slate-900/90 border border-slate-800 hover:border-teal-500/40 p-3 flex items-center gap-3.5 transition-colors">
+              <div class="w-28 h-12 rounded-lg bg-white p-1.5 flex items-center justify-center shrink-0 shadow-sm">
+                <img src="assets/organisation-logos-reference/The-Co-operative-Bank.png" alt="The Co-operative Bank Official Logo" class="max-h-10 w-auto object-contain" />
+              </div>
+              <div class="min-w-0">
+                <div class="font-display font-bold text-sm text-white truncate">The Co-operative Bank</div>
+                <div class="text-[11px] text-slate-300 truncate">Core Banking &amp; Digital Channels</div>
+                <div class="font-mono-kicker text-[9px] text-teal-400 mt-0.5">Direct Banking QA Engagement</div>
+              </div>
+            </div>
+
+            <!-- 5. Victoria University of Wellington -->
+            <div class="rounded-xl bg-slate-900/90 border border-slate-800 hover:border-teal-500/40 p-3 flex items-center gap-3.5 transition-colors">
+              <div class="w-28 h-12 rounded-lg bg-white p-1.5 flex items-center justify-center shrink-0 shadow-sm">
+                <img src="assets/organisation-logos-reference/Victoria-University-of-Wellington.png" alt="Victoria University of Wellington Official Logo" class="max-h-10 w-auto object-contain" />
+              </div>
+              <div class="min-w-0">
+                <div class="font-display font-bold text-sm text-white truncate">Victoria University of Wellington</div>
+                <div class="text-[11px] text-slate-300 truncate">Higher Education Enterprise Systems</div>
+                <div class="font-mono-kicker text-[9px] text-teal-400 mt-0.5">Senior Applications Test Analyst</div>
+              </div>
+            </div>
+
+            <!-- 6. New Zealand Defence Force (Programme work via One NZ) -->
+            <div class="rounded-xl bg-slate-900/90 border border-slate-800 hover:border-teal-500/40 p-3 flex items-center gap-3.5 transition-colors">
+              <div class="w-28 h-12 rounded-lg bg-white p-1.5 flex items-center justify-center shrink-0 shadow-sm">
+                <img src="assets/organisation-logos-reference/New-Zealand-Defence-Force.png" alt="New Zealand Defence Force Official Logo" class="max-h-10 w-auto object-contain" />
+              </div>
+              <div class="min-w-0">
+                <div class="font-display font-bold text-sm text-white truncate">New Zealand Defence Force</div>
+                <div class="text-[11px] text-amber-300 font-medium truncate">Programme work via One NZ</div>
+                <div class="font-mono-kicker text-[9px] text-slate-400 mt-0.5">Enterprise Mobility &amp; Cutover</div>
+              </div>
+            </div>
+
+            <!-- 7. New Zealand Police (Programme work via One NZ) -->
+            <div class="rounded-xl bg-slate-900/90 border border-slate-800 hover:border-teal-500/40 p-3 flex items-center gap-3.5 transition-colors">
+              <div class="w-28 h-12 rounded-lg bg-white p-1.5 flex items-center justify-center shrink-0 shadow-sm">
+                <img src="assets/organisation-logos-reference/New-Zealand-Police.png" alt="New Zealand Police Official Logo" class="max-h-10 w-auto object-contain" />
+              </div>
+              <div class="min-w-0">
+                <div class="font-display font-bold text-sm text-white truncate">New Zealand Police</div>
+                <div class="text-[11px] text-amber-300 font-medium truncate">Programme work via One NZ</div>
+                <div class="font-mono-kicker text-[9px] text-slate-400 mt-0.5">Frontline Mobility Stream</div>
+              </div>
+            </div>
+
+            <!-- 8. Ministry of Social Development (Programme work via One NZ) -->
+            <div class="rounded-xl bg-slate-900/90 border border-slate-800 hover:border-teal-500/40 p-3 flex items-center gap-3.5 transition-colors">
+              <div class="w-28 h-12 rounded-lg bg-white p-1.5 flex items-center justify-center shrink-0 shadow-sm">
+                <img src="assets/organisation-logos-reference/Ministry-of-Social-Development.png" alt="Ministry of Social Development Official Logo" class="max-h-10 w-auto object-contain" />
+              </div>
+              <div class="min-w-0">
+                <div class="font-display font-bold text-sm text-white truncate">Ministry of Social Development</div>
+                <div class="text-[11px] text-amber-300 font-medium truncate">Programme work via One NZ</div>
+                <div class="font-mono-kicker text-[9px] text-slate-400 mt-0.5">Agency Mobility &amp; UAT Stream</div>
+              </div>
+            </div>
+
+            <!-- 9. Wilkinson & Son's Chemist -->
+            <div class="rounded-xl bg-slate-900/90 border border-slate-800 hover:border-teal-500/40 p-3 flex items-center gap-3.5 transition-colors">
+              <img src="assets/portfolio-name-tiles/Wilkinson-and-Son.png" alt="Wilkinson & Son's Chemist" class="w-28 h-12 object-contain rounded-lg shrink-0" />
+              <div class="min-w-0">
+                <div class="font-display font-bold text-sm text-white truncate">Wilkinson &amp; Son’s Chemist</div>
+                <div class="text-[11px] text-slate-300 truncate">Earlier Career · Dunedin, NZ</div>
+                <div class="font-mono-kicker text-[9px] text-teal-400 mt-0.5">POS &amp; Retail Systems QA</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Optional Dark-Background Portfolio Name Tiles (Hidden unless toggled) -->
+          <div id="orgTilesGrid" class="hidden grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 mt-2">
+            <div class="rounded-lg bg-slate-900/80 border border-slate-800 p-1.5 flex items-center justify-center">
+              <img src="assets/portfolio-name-tiles/MBIE.png" alt="MBIE" class="w-full h-12 object-contain" />
+            </div>
+            <div class="rounded-lg bg-slate-900/80 border border-slate-800 p-1.5 flex items-center justify-center">
+              <img src="assets/portfolio-name-tiles/One-NZ.png" alt="One NZ" class="w-full h-12 object-contain" />
+            </div>
+            <div class="rounded-lg bg-slate-900/80 border border-slate-800 p-1.5 flex items-center justify-center">
+              <img src="assets/portfolio-name-tiles/Department-of-Conservation.png" alt="Department of Conservation" class="w-full h-12 object-contain" />
+            </div>
+            <div class="rounded-lg bg-slate-900/80 border border-slate-800 p-1.5 flex items-center justify-center">
+              <img src="assets/portfolio-name-tiles/The-Co-operative-Bank.png" alt="The Co-operative Bank" class="w-full h-12 object-contain" />
+            </div>
+            <div class="rounded-lg bg-slate-900/80 border border-slate-800 p-1.5 flex items-center justify-center">
+              <img src="assets/portfolio-name-tiles/Victoria-University-of-Wellington.png" alt="Victoria University of Wellington" class="w-full h-12 object-contain" />
+            </div>
+            <div class="rounded-lg bg-slate-900/80 border border-slate-800 p-1.5 flex items-center justify-center">
+              <img src="assets/portfolio-name-tiles/New-Zealand-Defence-Force.png" alt="New Zealand Defence Force — Programme work via One NZ" class="w-full h-12 object-contain" />
+            </div>
+            <div class="rounded-lg bg-slate-900/80 border border-slate-800 p-1.5 flex items-center justify-center">
+              <img src="assets/portfolio-name-tiles/New-Zealand-Police.png" alt="New Zealand Police — Programme work via One NZ" class="w-full h-12 object-contain" />
+            </div>
+            <div class="rounded-lg bg-slate-900/80 border border-slate-800 p-1.5 flex items-center justify-center">
+              <img src="assets/portfolio-name-tiles/Ministry-of-Social-Development.png" alt="Ministry of Social Development — Programme work via One NZ" class="w-full h-12 object-contain" />
+            </div>
+            <div class="rounded-lg bg-slate-900/80 border border-slate-800 p-1.5 flex items-center justify-center">
+              <img src="assets/portfolio-name-tiles/Wilkinson-and-Son.png" alt="Wilkinson & Son's Chemist" class="w-full h-12 object-contain" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- SECTION 02: SELECTED WORK (IMMEDIATELY AFTER HERO)                    -->
+    <!-- Three Flagship Projects with "Inspect my work" panels + Share Links   -->
+    <!-- ===================================================================== -->
+    <section id="work" data-scene="02" data-scene-name="Selected Work" class="py-16 lg:py-24 border-b border-slate-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-10">
+
+        <!-- Section Header -->
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4">
+          <div class="space-y-2">
+            <div class="font-mono-kicker text-xs text-teal-400 font-semibold">02 / Selected Work · Proof of Leadership, Technical Depth &amp; Cutover Governance</div>
+            <h2 class="font-display font-black text-3xl sm:text-4xl text-white">
+              Three Flagship Programmes. Three Distinct Proofs.
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base max-w-3xl">
+              Each featured project highlights a distinct dimension of how I work—from leading a five-person QA team across payment builds to SQL data migration reconciliation and multi-agency cutover risk management. Open <strong class="text-teal-300">“Inspect my work”</strong> on any card to examine recreated QA artifacts using synthetic sample data.
+            </p>
+          </div>
+          <div class="font-mono-kicker text-[11px] text-slate-400 bg-slate-900/90 border border-slate-800 px-3.5 py-2 rounded-xl shrink-0">
+            Direct Recruiter Deep-Links Enabled 🔗
+          </div>
+        </div>
+
+        <!-- 3 Featured Flagship Project Cards -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+          <!-- FEATURED PROJECT 1: NZeTA PayNow -->
+          <article id="work-paynow" class="exec-card p-6 flex flex-col justify-between space-y-5 scroll-mt-24">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between gap-2">
+                <span class="px-2.5 py-1 rounded-md bg-teal-500/15 border border-teal-400/30 font-mono-kicker text-[10px] text-teal-300 font-bold">
+                  01 · QA TEAM LEADERSHIP &amp; PAYMENTS
+                </span>
+                <button
+                  type="button"
+                  onclick="copyProjectLink('work-paynow', this)"
+                  class="font-mono-kicker text-[10px] text-slate-400 hover:text-teal-300 px-2 py-1 rounded bg-slate-900/90 border border-slate-800 transition-colors"
+                  title="Copy direct link to NZeTA PayNow project for Test Manager / Lead applications"
+                >
+                  Copy Link 🔗
+                </button>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <div class="w-24 h-10 rounded-lg bg-white p-1.5 flex items-center justify-center shrink-0 shadow-sm">
+                  <img src="assets/organisation-logos-reference/MBIE.png" alt="MBIE Official Logo" class="max-h-7 w-auto object-contain" />
+                </div>
+                <div>
+                  <h3 class="font-display font-bold text-xl text-white">NZeTA PayNow Integration</h3>
+                  <p class="font-mono-kicker text-[10px] text-slate-400">MBIE (Immigration NZ) · Test Lead</p>
+                </div>
+              </div>
+
+              <p class="text-sm text-slate-200 leading-relaxed">
+                How I led a five-person QA team, coordinated vendor builds (Builds 1–3), and gave stakeholders a clear view of coverage, defects and release readiness across Web, iOS and Android payment flows.
+              </p>
+
+              <ul class="space-y-1.5 text-xs text-slate-300">
+                <li class="flex items-start gap-2">
+                  <span class="text-teal-400 font-bold">✓</span>
+                  <span>Directed 5 testers across NZeTA Web, mobile apps, Provider/Proxy/CRT rules, and Windcave/QuickPay payment gateways.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-teal-400 font-bold">✓</span>
+                  <span>Established build-by-build entry/exit gates, duplicate-payment prevention checks, and GST tax invoice reconciliation.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="pt-3 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-2">
+              <button
+                type="button"
+                onclick="toggleInspectPanel('inspect-paynow', this)"
+                aria-expanded="false"
+                aria-controls="inspect-paynow"
+                class="px-3.5 py-2 rounded-lg bg-teal-500/20 hover:bg-teal-500/30 border border-teal-400/50 text-teal-200 font-mono-kicker text-[11px] font-bold transition-colors"
+              >
+                Inspect my work: Build Dashboard ▾
+              </button>
+              <button
+                type="button"
+                onclick="openCaseModal('paynow', this)"
+                class="text-xs font-semibold text-slate-300 hover:text-white underline underline-offset-4"
+              >
+                Full Case Study →
+              </button>
+            </div>
+          </article>
+
+          <!-- FEATURED PROJECT 2: IPONZ SaaS Migration -->
+          <article id="work-iponz" class="exec-card p-6 flex flex-col justify-between space-y-5 scroll-mt-24">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between gap-2">
+                <span class="px-2.5 py-1 rounded-md bg-sky-500/15 border border-sky-400/30 font-mono-kicker text-[10px] text-sky-300 font-bold">
+                  02 · SQL RECONCILIATION &amp; DATA MIGRATION
+                </span>
+                <button
+                  type="button"
+                  onclick="copyProjectLink('work-iponz', this)"
+                  class="font-mono-kicker text-[10px] text-slate-400 hover:text-teal-300 px-2 py-1 rounded bg-slate-900/90 border border-slate-800 transition-colors"
+                  title="Copy direct link to IPONZ SaaS Migration for Data Migration Test Lead applications"
+                >
+                  Copy Link 🔗
+                </button>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <div class="w-24 h-10 rounded-lg bg-white p-1.5 flex items-center justify-center shrink-0 shadow-sm">
+                  <img src="assets/organisation-logos-reference/MBIE.png" alt="MBIE Official Logo" class="max-h-7 w-auto object-contain" />
+                </div>
+                <div>
+                  <h3 class="font-display font-bold text-xl text-white">IPONZ SaaS Migration</h3>
+                  <p class="font-mono-kicker text-[10px] text-slate-400">MBIE · Data Migration Test Lead</p>
+                </div>
+              </div>
+
+              <p class="text-sm text-slate-200 leading-relaxed">
+                How I used SQL reconciliation and transformation-rule validation to check that critical intellectual property records arrived correctly in the target SaaS system.
+              </p>
+
+              <ul class="space-y-1.5 text-xs text-slate-300">
+                <li class="flex items-start gap-2">
+                  <span class="text-sky-400 font-bold">✓</span>
+                  <span>Authored complex source-to-target SQL reconciliation queries verifying record counts, schema mappings, and historical statuses.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-sky-400 font-bold">✓</span>
+                  <span>Validated API integrations (Catalyst, OpenAPI, DocMan, MuleSoft) and isolated transformation edge cases prior to cutover.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="pt-3 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-2">
+              <button
+                type="button"
+                onclick="toggleInspectPanel('inspect-iponz', this)"
+                aria-expanded="false"
+                aria-controls="inspect-iponz"
+                class="px-3.5 py-2 rounded-lg bg-sky-500/20 hover:bg-sky-500/30 border border-sky-400/50 text-sky-200 font-mono-kicker text-[11px] font-bold transition-colors"
+              >
+                Inspect my work: SQL Reconciliation ▾
+              </button>
+              <button
+                type="button"
+                onclick="openCaseModal('iponz', this)"
+                class="text-xs font-semibold text-slate-300 hover:text-white underline underline-offset-4"
+              >
+                Full Case Study →
+              </button>
+            </div>
+          </article>
+
+          <!-- FEATURED PROJECT 3: One NZ Enterprise Mobility -->
+          <article id="work-onenz" class="exec-card p-6 flex flex-col justify-between space-y-5 scroll-mt-24">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between gap-2">
+                <span class="px-2.5 py-1 rounded-md bg-emerald-500/15 border border-emerald-400/30 font-mono-kicker text-[10px] text-emerald-300 font-bold">
+                  03 · CUTOVER RISK &amp; LIVE HANDOVER
+                </span>
+                <button
+                  type="button"
+                  onclick="copyProjectLink('work-onenz', this)"
+                  class="font-mono-kicker text-[10px] text-slate-400 hover:text-teal-300 px-2 py-1 rounded bg-slate-900/90 border border-slate-800 transition-colors"
+                  title="Copy direct link to One NZ Enterprise Mobility for UAT / Release Lead applications"
+                >
+                  Copy Link 🔗
+                </button>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <div class="w-16 h-10 rounded-lg bg-white p-1.5 flex items-center justify-center shrink-0 shadow-sm">
+                  <img src="assets/organisation-logos-reference/One-NZ.png" alt="One NZ Official Logo" class="max-h-8 w-auto object-contain" />
+                </div>
+                <div>
+                  <h3 class="font-display font-bold text-xl text-white">One NZ Enterprise Mobility</h3>
+                  <p class="font-mono-kicker text-[10px] text-slate-400">One NZ · Technical Test Lead (NZDF, MSD, Police)</p>
+                </div>
+              </div>
+              <div class="flex flex-wrap items-center gap-2 pt-1">
+                <span class="font-mono-kicker text-[9px] text-amber-300">Programme work via One NZ:</span>
+                <span class="bg-white rounded px-1.5 py-0.5 inline-flex items-center"><img src="assets/organisation-logos-reference/New-Zealand-Defence-Force.png" alt="NZDF Logo" class="h-4 w-auto object-contain" /></span>
+                <span class="bg-white rounded px-1.5 py-0.5 inline-flex items-center"><img src="assets/organisation-logos-reference/New-Zealand-Police.png" alt="NZ Police Logo" class="h-4 w-auto object-contain" /></span>
+                <span class="bg-white rounded px-1.5 py-0.5 inline-flex items-center"><img src="assets/organisation-logos-reference/Ministry-of-Social-Development.png" alt="MSD Logo" class="h-4 w-auto object-contain" /></span>
+              </div>
+
+              <p class="text-sm text-slate-200 leading-relaxed">
+                How I managed test and cutover risk across government streams (NZDF, MSD, New Zealand Police — programme work via One NZ) and supported the handover into live service.
+              </p>
+
+              <ul class="space-y-1.5 text-xs text-slate-300">
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-400 font-bold">✓</span>
+                  <span>Governed E2E UAT, MDM security policies, and zero-touch fleet provisioning across 15,000+ government endpoints.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-400 font-bold">✓</span>
+                  <span>Enforced go/no-go dress-rehearsal gates, halting premature cutover when certificate renewal risks surfaced.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="pt-3 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-2">
+              <button
+                type="button"
+                onclick="toggleInspectPanel('inspect-onenz', this)"
+                aria-expanded="false"
+                aria-controls="inspect-onenz"
+                class="px-3.5 py-2 rounded-lg bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-400/50 text-emerald-200 font-mono-kicker text-[11px] font-bold transition-colors"
+              >
+                Inspect my work: Cutover Checklist ▾
+              </button>
+              <button
+                type="button"
+                onclick="openCaseModal('onenz', this)"
+                class="text-xs font-semibold text-slate-300 hover:text-white underline underline-offset-4"
+              >
+                Full Case Study →
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- ================================================================= -->
+        <!-- EXPANDABLE "INSPECT MY WORK" PANELS (RECREATED SYNTHETIC PROOF)   -->
+        <!-- ================================================================= -->
+
+        <!-- Inspect Panel 1: NZeTA PayNow Recreated Build-Readiness Dashboard -->
+        <div id="inspect-paynow" class="hidden rounded-2xl bg-[#071124] border border-teal-500/40 p-5 sm:p-6 space-y-4 shadow-2xl">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
+            <div>
+              <span class="font-mono-kicker text-[10px] text-teal-300 font-bold px-2 py-0.5 rounded bg-teal-500/15 border border-teal-500/30">
+                RECREATED QA ARTIFACT · SYNTHETIC SAMPLE DATA
+              </span>
+              <h4 class="font-display font-bold text-lg sm:text-xl text-white mt-1">
+                NZeTA PayNow — Multi-Build Release Readiness Dashboard (Builds 1–3)
+              </h4>
+            </div>
+            <button type="button" onclick="toggleInspectPanel('inspect-paynow')" class="text-xs font-mono-kicker text-slate-400 hover:text-white px-2.5 py-1 rounded bg-slate-900">
+              Close Panel ✕
+            </button>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-300">
+            This recreation illustrates how I structured daily build-readiness visibility for stakeholders across our five-person QA team—tracking vendor drops, Acceptance Criteria coverage, payment callback defects, and release gate sign-off.
+          </p>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse text-xs">
+              <thead>
+                <tr class="border-b border-slate-800 font-mono-kicker text-[10px] text-slate-400">
+                  <th class="py-2.5 px-3">Vendor Drop</th>
+                  <th class="py-2.5 px-3">Scope &amp; Payment Stream</th>
+                  <th class="py-2.5 px-3">AC Coverage</th>
+                  <th class="py-2.5 px-3">Execution (Pass / Fail / Blocked)</th>
+                  <th class="py-2.5 px-3">Critical Finding &amp; Action</th>
+                  <th class="py-2.5 px-3">Gate Decision</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-800/80 text-slate-200">
+                <tr>
+                  <td class="py-2.5 px-3 font-mono-kicker text-teal-300 font-bold">Build 01</td>
+                  <td class="py-2.5 px-3">PayNow QR generation &amp; Provider/Proxy routing</td>
+                  <td class="py-2.5 px-3">42 / 42 ACs (100%)</td>
+                  <td class="py-2.5 px-3"><span class="text-emerald-400 font-semibold">36 Pass</span> · <span class="text-rose-400 font-semibold">4 Fail</span> · 2 Blocked</td>
+                  <td class="py-2.5 px-3">CRT rule mismatch on multi-traveller group fee; logged P2 &amp; aligned vendor payload</td>
+                  <td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 font-mono-kicker text-[10px]">PROCEED TO B2</span></td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 px-3 font-mono-kicker text-teal-300 font-bold">Build 02</td>
+                  <td class="py-2.5 px-3">Windcave webhook callbacks, duplicate-payment lock &amp; iOS/Android parity</td>
+                  <td class="py-2.5 px-3">68 / 68 ACs (100%)</td>
+                  <td class="py-2.5 px-3"><span class="text-emerald-400 font-semibold">65 Pass</span> · <span class="text-rose-400 font-semibold">3 Fail</span> · 0 Blocked</td>
+                  <td class="py-2.5 px-3">Caught duplicate-charge risk on mobile retry during network drop; enforced idempotency token check</td>
+                  <td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 font-mono-kicker text-[10px]">FIX VERIFIED IN B3</span></td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 px-3 font-mono-kicker text-teal-300 font-bold">Build 03 (RC)</td>
+                  <td class="py-2.5 px-3">E2E regression, GST tax invoice PDF generation &amp; smoke pack</td>
+                  <td class="py-2.5 px-3">84 / 84 ACs (100%)</td>
+                  <td class="py-2.5 px-3"><span class="text-emerald-400 font-semibold">84 Pass</span> · 0 P1/P2 Open</td>
+                  <td class="py-2.5 px-3">All 5 testers completed cross-browser &amp; mobile device matrix; UAT sign-off pack delivered</td>
+                  <td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono-kicker text-[10px] font-bold">SIGNED OFF (GO)</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Inspect Panel 2: IPONZ SaaS Migration Recreated SQL Reconciliation -->
+        <div id="inspect-iponz" class="hidden rounded-2xl bg-[#071124] border border-sky-500/40 p-5 sm:p-6 space-y-4 shadow-2xl">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
+            <div>
+              <span class="font-mono-kicker text-[10px] text-sky-300 font-bold px-2 py-0.5 rounded bg-sky-500/15 border border-sky-500/30">
+                RECREATED QA ARTIFACT · SYNTHETIC SAMPLE DATA
+              </span>
+              <h4 class="font-display font-bold text-lg sm:text-xl text-white mt-1">
+                IPONZ SaaS Migration — Sample SQL Reconciliation &amp; Mismatch Investigation
+              </h4>
+            </div>
+            <button type="button" onclick="toggleInspectPanel('inspect-iponz')" class="text-xs font-mono-kicker text-slate-400 hover:text-white px-2.5 py-1 rounded bg-slate-900">
+              Close Panel ✕
+            </button>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-start">
+            <div class="lg:col-span-6 rounded-xl bg-slate-950 border border-slate-800 p-4 font-mono text-xs text-slate-200 overflow-x-auto">
+              <div class="text-[10px] font-mono-kicker text-sky-400 mb-2">// RECREATED SOURCE-TO-TARGET RECONCILIATION QUERY (SYNTHETIC SCHEMA)</div>
+<pre class="leading-relaxed text-[11px] text-teal-200">SELECT
+  s.ip_case_id,
+  s.legacy_status_code,
+  t.saas_lifecycle_state,
+  s.priority_filing_dt AS src_filing_dt,
+  t.priority_filing_dt AS tgt_filing_dt,
+  CASE
+    WHEN t.ip_case_id IS NULL THEN 'MISSING_IN_TARGET'
+    WHEN s.expected_target_state &lt;&gt; t.saas_lifecycle_state THEN 'STATE_RULE_MISMATCH'
+    WHEN DATEDIFF(day, s.priority_filing_dt, t.priority_filing_dt) &lt;&gt; 0 THEN 'DATE_OFFSET_DRIFT'
+    ELSE 'RECONCILED_OK'
+  END AS recon_verdict
+FROM staging_legacy_ip_cases s
+LEFT JOIN target_saas_ip_registry t
+  ON s.ip_case_id = t.external_legacy_ref
+WHERE s.migration_wave = 'WAVE_03_TRADEMARKS';</pre>
+            </div>
+            <div class="lg:col-span-6 space-y-3 text-xs text-slate-200">
+              <div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2">
+                <div class="font-mono-kicker text-[10px] text-amber-300 font-bold">MISMATCH DETECTED IN TRIAL LOAD (142 OF 50,000 SYNTHETIC RECORDS)</div>
+                <p class="text-slate-300 leading-relaxed">
+                  <strong>Symptom:</strong> 142 historical trademark records returned <code class="text-rose-300">DATE_OFFSET_DRIFT (-1 day)</code> and <code class="text-amber-300">STATE_RULE_MISMATCH</code> when transitioning from <code class="text-slate-200">RENEWAL_GRACE</code>.
+                </p>
+                <p class="text-slate-300 leading-relaxed">
+                  <strong>How I Investigated &amp; Resolved It:</strong> Joined the MuleSoft transformation payload logs against the legacy SQL timestamps and proved that timestamps filed during NZ Daylight Saving Time (NZDT) were being cast to UTC without timezone offset preservation before truncation to <code class="text-teal-300">DATE</code>. Updated the ETL mapping rule with the data engineering lead and re-ran Wave 03 reconciliation to achieve <strong>100.0% parity (50,000 / 50,000 records)</strong> prior to dress rehearsal sign-off.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Inspect Panel 3: One NZ Enterprise Mobility Recreated Cutover Checklist -->
+        <div id="inspect-onenz" class="hidden rounded-2xl bg-[#071124] border border-emerald-500/40 p-5 sm:p-6 space-y-4 shadow-2xl">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
+            <div>
+              <span class="font-mono-kicker text-[10px] text-emerald-300 font-bold px-2 py-0.5 rounded bg-emerald-500/15 border border-emerald-500/30">
+                RECREATED QA ARTIFACT · SYNTHETIC SAMPLE DATA
+              </span>
+              <h4 class="font-display font-bold text-lg sm:text-xl text-white mt-1">
+                One NZ Enterprise Mobility — Cutover Readiness Checklist &amp; No-Go Trigger
+              </h4>
+            </div>
+            <button type="button" onclick="toggleInspectPanel('inspect-onenz')" class="text-xs font-mono-kicker text-slate-400 hover:text-white px-2.5 py-1 rounded bg-slate-900">
+              Close Panel ✕
+            </button>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse text-xs">
+              <thead>
+                <tr class="border-b border-slate-800 font-mono-kicker text-[10px] text-slate-400">
+                  <th class="py-2 px-3">Cutover Gate Check</th>
+                  <th class="py-2 px-3">Agency Stream (via One NZ)</th>
+                  <th class="py-2 px-3">Rehearsal Result</th>
+                  <th class="py-2 px-3">Cutover Rule / Action Taken</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-800/80 text-slate-200">
+                <tr>
+                  <td class="py-2.5 px-3 font-semibold">01 · Zero-Touch DEP / Autopilot Enrolment</td>
+                  <td class="py-2.5 px-3">NZDF &amp; MSD Streams</td>
+                  <td class="py-2.5 px-3"><span class="text-emerald-400 font-bold">PASS (100%)</span></td>
+                  <td class="py-2.5 px-3">Provisioning completed within 4m 30s SLA across field profiles.</td>
+                </tr>
+                <tr class="bg-rose-950/25">
+                  <td class="py-2.5 px-3 font-semibold text-rose-200">02 · SCEP Certificate Auto-Renewal on Roaming VPN</td>
+                  <td class="py-2.5 px-3">Frontline Mobility Stream</td>
+                  <td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded bg-rose-500/20 border border-rose-500/40 text-rose-300 font-mono-kicker text-[10px] font-bold">NO-GO TRIGGERED</span></td>
+                  <td class="py-2.5 px-3 text-rose-100"><strong>Clear No-Go Condition:</strong> Any silent VPN drop on supervised field handsets blocks cutover. Halted Friday release window, isolated root cause to intermediate CA chain order, verified hotfix across 8 physical device types, and cleared Monday cutover.</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 px-3 font-semibold">03 · Hypercare &amp; BAU Support Handover Runbook</td>
+                  <td class="py-2.5 px-3">All Enterprise Streams</td>
+                  <td class="py-2.5 px-3"><span class="text-emerald-400 font-bold">SIGNED OFF</span></td>
+                  <td class="py-2.5 px-3">Rollback thresholds, escalation matrix, and L2/L3 support playbooks accepted by Service Delivery.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Additional Case Studies Filter Bar (Defect #5 Fixed: Filter state is preserved when opening a modal via Search!) -->
+        <div class="pt-6 border-t border-slate-800/80 space-y-4">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div>
+              <h3 class="font-display font-bold text-lg text-white">Complete Case Study Archive &amp; Core Specialisations</h3>
+              <p class="text-xs text-slate-400">Filter all 6 programme case studies by domain or inspect any capability pillar below.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5" id="workFilterBar" role="tablist" aria-label="Filter case studies by category">
+              <button type="button" data-filter="all" class="work-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono-kicker font-bold bg-teal-500 text-slate-950">All (6)</button>
+              <button type="button" data-filter="payments" class="work-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono-kicker bg-slate-900 text-slate-300 border border-slate-800 hover:border-teal-500/40">Payments &amp; 3DS (2)</button>
+              <button type="button" data-filter="migration" class="work-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono-kicker bg-slate-900 text-slate-300 border border-slate-800 hover:border-teal-500/40">Migration &amp; Cloud (2)</button>
+              <button type="button" data-filter="government" class="work-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono-kicker bg-slate-900 text-slate-300 border border-slate-800 hover:border-teal-500/40">Enterprise &amp; Accessibility (2)</button>
+            </div>
+          </div>
+
+          <div id="workListContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+
+          <!-- Quiet Interactive Skill Pillars Strip (Moved out of the hero portrait orbit so it doesn't compete with Mazher's portrait) -->
+          <div class="pt-4">
+            <div class="rounded-2xl bg-slate-900/60 border border-slate-800/90 p-4 sm:p-5 space-y-3">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <span class="font-mono-kicker text-[10px] text-teal-400 font-bold">CORE QA &amp; DELIVERY CAPABILITY PILLARS (SELECT TO INSPECT)</span>
+                <span id="activePillarBadge" class="font-mono-kicker text-[10px] text-slate-400">6 Core Specialisations</span>
+              </div>
+              <div class="flex flex-wrap gap-2" id="skillsPillarBar">
+                <button type="button" onclick="selectSkillPillar('migration', this)" class="skill-pillar-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-teal-500/20 border border-teal-400/50 text-teal-200">01 · Data Migration &amp; SQL Reconciliation</button>
+                <button type="button" onclick="selectSkillPillar('payments', this)" class="skill-pillar-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-900 border border-slate-800 text-slate-300 hover:border-teal-500/40">02 · Payments, PayNow &amp; 3DS 2.0</button>
+                <button type="button" onclick="selectSkillPillar('leadership', this)" class="skill-pillar-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-900 border border-slate-800 text-slate-300 hover:border-teal-500/40">03 · QA Leadership &amp; Release Governance</button>
+                <button type="button" onclick="selectSkillPillar('api', this)" class="skill-pillar-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-900 border border-slate-800 text-slate-300 hover:border-teal-500/40">04 · API, MuleSoft &amp; Cloud Integration</button>
+                <button type="button" onclick="selectSkillPillar('mobile', this)" class="skill-pillar-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-900 border border-slate-800 text-slate-300 hover:border-teal-500/40">05 · Enterprise Mobility &amp; MDM</button>
+                <button type="button" onclick="selectSkillPillar('automation', this)" class="skill-pillar-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-900 border border-slate-800 text-slate-300 hover:border-teal-500/40">06 · Automation, Accessibility (WCAG) &amp; AI QA</button>
+              </div>
+              <p id="skillPillarReadout" class="text-xs sm:text-sm text-slate-300 leading-relaxed pt-1">
+                <strong class="text-white">Data Migration &amp; SQL Reconciliation:</strong> Source-to-target schema validation, complex SQL join queries, ETL transformation rule verification, and trial-load discrepancy resolution across IPONZ SaaS and enterprise ERP/CRM migrations.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- SECTION 03: QA LAB (RELEASE DECISION SIMULATOR + AI-ASSISTED QA)      -->
+    <!-- ===================================================================== -->
+    <section id="qa-lab" data-scene="03" data-scene-name="QA Lab" class="py-16 lg:py-24 border-b border-slate-800/80 bg-[#030812]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-10">
+
+        <div class="space-y-2">
+          <div class="font-mono-kicker text-xs text-teal-400 font-semibold">03 / Interactive QA Lab · Release Gate Judgment &amp; AI-Assisted Test Design</div>
+          <h2 class="font-display font-black text-3xl sm:text-4xl text-white">
+            How I Make Release Decisions &amp; Review AI-Generated Tests
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base max-w-3xl">
+            Explore two practical demonstrations below: first, an interactive release-gate scenario asking <em class="text-teal-300">“Would you release with an unresolved critical payment defect?”</em>; second, a side-by-side look at what an AI test generator produced versus what I corrected and added as a Test Lead (using synthetic sample data).
+          </p>
+        </div>
+
+        <!-- QA Lab Part A: Interactive Release Gate Scenario -->
+        <div class="exec-card p-5 sm:p-7 space-y-6">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+            <div>
+              <span class="font-mono-kicker text-[10px] text-teal-300 font-bold">QA LAB PART A · RELEASE GATE DECISION SCENARIO (SYNTHETIC SAMPLE)</span>
+              <h3 class="font-display font-bold text-xl sm:text-2xl text-white mt-0.5">
+                Scenario: Would you release with an unresolved critical payment defect?
+              </h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <button
+                id="runNoGoSimBtn"
+                type="button"
+                onclick="runQaLabScenario('nogo')"
+                class="px-3.5 py-2 rounded-lg bg-rose-500/20 hover:bg-rose-500/30 border border-rose-400/50 text-rose-200 font-mono-kicker text-xs font-bold transition-colors"
+              >
+                1. Inspect Unresolved Payment Defect (NO-GO)
+              </button>
+              <button
+                id="runSimBtn"
+                type="button"
+                onclick="runQaLabScenario('go')"
+                class="px-3.5 py-2 rounded-lg bg-teal-500/20 hover:bg-teal-500/30 border border-teal-400/50 text-teal-200 font-mono-kicker text-xs font-bold transition-colors"
+              >
+                2. Inspect Verified Fix &amp; Sign-Off (GO)
+              </button>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+            <!-- Left Decision Evidence Readout -->
+            <div class="lg:col-span-6 space-y-4">
+              <div class="p-4 rounded-xl bg-slate-950/90 border border-slate-800 space-y-3">
+                <div class="flex items-center justify-between gap-2">
+                  <span id="simMetricLeft" class="font-mono-kicker text-xs text-slate-300 font-semibold">AC COVERAGE: 83 / 84 (98.8%)</span>
+                  <span id="simMetricRight" class="px-2.5 py-0.5 rounded bg-rose-500/20 border border-rose-500/40 font-mono-kicker text-xs text-rose-300 font-bold">RECOMMENDATION: NO-GO (HOLD RELEASE)</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-slate-900 overflow-hidden">
+                  <div id="simProgressBar" class="h-full bg-gradient-to-r from-rose-500 to-amber-400 transition-all duration-300" style="width: 88%;"></div>
+                </div>
+                <p id="simStatusLabel" class="text-xs sm:text-sm text-slate-200 leading-relaxed">
+                  <strong>Active Defect (Sev-1 / P1):</strong> Under 4G packet loss, tapping “Pay Now” twice within 1.8s triggers a race condition between the Windcave webhook callback and the client polling loop—resulting in a confirmed bank debit while the application status remains <code class="text-rose-300">PENDING_PAYMENT</code>.
+                </p>
+              </div>
+
+              <div id="qaLabReasoningBox" class="p-4 rounded-xl bg-slate-900/70 border border-teal-500/30 space-y-2 text-xs sm:text-sm text-slate-200">
+                <div class="font-mono-kicker text-[10px] text-teal-300 font-bold">MY RELEASE REASONING &amp; STAKEHOLDER RECOMMENDATION</div>
+                <p id="qaLabReasoningText" class="leading-relaxed">
+                  Even though 98.8% of functional tests pass, any defect that takes a customer's payment without issuing their visa/application receipt—or risks a double charge—is an immediate <strong>Release Blocker (No-Go)</strong>. I recommend holding cutover for 24 hours while engineering enforces an idempotency key on the payment session ID and implements a webhook-first state lock.
+                </p>
+              </div>
+            </div>
+
+            <!-- Right Architecture Evidence Flow -->
+            <div class="lg:col-span-6 rounded-xl bg-slate-950/90 border border-slate-800 p-4 space-y-3">
+              <div class="font-mono-kicker text-[10px] text-slate-400">CLICK ANY ARCHITECTURE CHECKPOINT TO INSPECT TEST EVIDENCE</div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5" id="qaLabNodeGrid">
+                <button type="button" onclick="inspectLabNode(0, this)" class="lab-node-btn text-left p-3 rounded-lg bg-slate-900 border border-teal-500/50 space-y-1">
+                  <div class="font-mono-kicker text-[10px] text-teal-300 font-bold">01 · WEB &amp; MOBILE CHANNELS</div>
+                  <div class="text-xs font-semibold text-white">NZeTA Web, iOS &amp; Android UI</div>
+                  <div class="text-[11px] text-emerald-400">28 / 28 UI &amp; WCAG Checks Passed</div>
+                </button>
+                <button type="button" onclick="inspectLabNode(1, this)" class="lab-node-btn text-left p-3 rounded-lg bg-slate-900 border border-rose-500/50 space-y-1">
+                  <div class="font-mono-kicker text-[10px] text-rose-300 font-bold">02 · PAYMENT GATEWAY &amp; 3DS</div>
+                  <div class="text-xs font-semibold text-white">PayNow / Windcave / 3DS 2.0</div>
+                  <div class="text-[11px] text-rose-300" id="labNode2Status">1 P1 Webhook Race Condition</div>
+                </button>
+                <button type="button" onclick="inspectLabNode(2, this)" class="lab-node-btn text-left p-3 rounded-lg bg-slate-900 border border-slate-800 space-y-1">
+                  <div class="font-mono-kicker text-[10px] text-sky-300 font-bold">03 · DATA &amp; LEDGER RECONCILIATION</div>
+                  <div class="text-xs font-semibold text-white">SQL Settlement &amp; GST Tax Invoice</div>
+                  <div class="text-[11px] text-emerald-400">100% SQL Ledger Match</div>
+                </button>
+                <button type="button" onclick="inspectLabNode(3, this)" class="lab-node-btn text-left p-3 rounded-lg bg-slate-900 border border-slate-800 space-y-1">
+                  <div class="font-mono-kicker text-[10px] text-amber-300 font-bold">04 · UAT &amp; CUTOVER SIGN-OFF</div>
+                  <div class="text-xs font-semibold text-white">Release Gate Governance</div>
+                  <div class="text-[11px] text-amber-300" id="labNode4Status">Gate Held Pending P1 Fix</div>
+                </button>
+              </div>
+              <div id="nodeInspectorBox" class="p-3.5 rounded-lg bg-slate-900/90 border border-slate-800 text-xs text-slate-300 leading-relaxed">
+                <strong class="text-teal-300" id="nodeTitle">02 · Payment Gateway &amp; 3DS 2.0 Inspection:</strong>
+                <span id="nodeDesc">Validated Provider, Proxy, and CRT routing rules across PayNow, Windcave, and Datacom 3DS 2.0. Isolated asynchronous callback collision when mobile network switches from Wi-Fi to 4G mid-transaction.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- QA Lab Part B: AI-Assisted Test Design Example (What Copilot Suggested vs What Mazher Corrected) -->
+        <div class="exec-card p-5 sm:p-7 space-y-5">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
+            <div>
+              <span class="font-mono-kicker text-[10px] text-sky-300 font-bold">QA LAB PART B · AI-ASSISTED TEST DESIGN REVIEW (SYNTHETIC SAMPLE DATA)</span>
+              <h3 class="font-display font-bold text-xl sm:text-2xl text-white mt-0.5">
+                What the AI Suggested vs. What I Corrected as a Tester
+              </h3>
+            </div>
+            <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 font-mono-kicker text-[10px] text-slate-300">
+              Human-in-the-Loop QA Governance
+            </span>
+          </div>
+
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            AI tools accelerate initial test drafting, but they routinely miss domain-specific business rules, asynchronous state hazards, and financial reconciliation requirements. Below is a recreated example from a multi-traveller payment &amp; data migration workflow.
+          </p>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+            <!-- Left: Raw AI Output -->
+            <div class="rounded-xl bg-slate-950/90 border border-rose-500/30 p-4 sm:p-5 space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="font-mono-kicker text-[10px] text-rose-300 font-bold px-2 py-0.5 rounded bg-rose-500/15">
+                  RAW AI / COPILOT DRAFT (INCOMPLETE)
+                </span>
+                <span class="font-mono-kicker text-[10px] text-slate-400">Surface-Level Happy Paths</span>
+              </div>
+              <ul class="space-y-2 text-xs text-slate-300 leading-relaxed">
+                <li class="p-2.5 rounded bg-slate-900/80 border border-slate-800">
+                  <strong>AI Test 1:</strong> “Verify user can select PayNow, enter valid amount, and see payment success screen.” <span class="text-rose-300 font-semibold">(Misses CRT fee routing &amp; webhook verification)</span>
+                </li>
+                <li class="p-2.5 rounded bg-slate-900/80 border border-slate-800">
+                  <strong>AI Test 2:</strong> “Verify error message is displayed when payment fails or user cancels.” <span class="text-rose-300 font-semibold">(Misses orphan session lock &amp; retry idempotency)</span>
+                </li>
+                <li class="p-2.5 rounded bg-slate-900/80 border border-slate-800">
+                  <strong>AI Test 3:</strong> “Verify transaction record is saved in the database after payment.” <span class="text-rose-300 font-semibold">(No SQL field-level GST or timezone reconciliation check)</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Right: What Mazher Corrected & Engineered -->
+            <div class="rounded-xl bg-slate-950/90 border border-teal-500/40 p-4 sm:p-5 space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="font-mono-kicker text-[10px] text-teal-300 font-bold px-2 py-0.5 rounded bg-teal-500/15">
+                  WHAT I CORRECTED &amp; ACCEPTED AS TEST LEAD
+                </span>
+                <span class="font-mono-kicker text-[10px] text-teal-300">Release-Grade Assurance</span>
+              </div>
+              <ul class="space-y-2 text-xs text-slate-200 leading-relaxed">
+                <li class="p-2.5 rounded bg-slate-900/90 border border-teal-500/30">
+                  <strong class="text-teal-300">Correction 1 (Provider / Proxy / CRT Routing):</strong> Replaced generic payment check with boundary matrix across single vs. family group applicants, verifying exact fee split and NZ GST calculation on the generated tax invoice.
+                </li>
+                <li class="p-2.5 rounded bg-slate-900/90 border border-teal-500/30">
+                  <strong class="text-teal-300">Correction 2 (Duplicate-Payment &amp; Webhook Timeout):</strong> Added negative test simulating a 15-second gateway callback delay + browser refresh to prove idempotency token prevents double-charging.
+                </li>
+                <li class="p-2.5 rounded bg-slate-900/90 border border-teal-500/30">
+                  <strong class="text-teal-300">Correction 3 (SQL Settlement Reconciliation):</strong> Added explicit SQL verification assertion matching gateway settlement reference, NZDT/UTC timestamp, and target SaaS application status.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- SECTION 04: INTERNATIONAL CAREER MAP (9-COUNTRY STORY)                -->
+    <!-- ===================================================================== -->
+    <section id="global-footprint" data-scene="04" data-scene-name="9-Country Footprint" class="py-16 lg:py-24 border-b border-slate-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-8">
+
+        <div class="space-y-2">
+          <div class="font-mono-kicker text-xs text-teal-400 font-semibold">04 / International Career Footprint · 9-Country Professional Story</div>
+          <h2 class="font-display font-black text-3xl sm:text-4xl text-white">
+            From Saudi Arabia to New Zealand — With Global Delivery Across 9 Countries
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base max-w-3xl">
+            My nine-country professional story starts in <strong class="text-white">Saudi Arabia</strong>, includes work and project travel across the <strong class="text-white">United States, United Arab Emirates, Egypt, Qatar, Oman, Singapore and Malaysia</strong>, and continues in <strong class="text-teal-300">New Zealand</strong>. Select any country below (or search any country in Quick Search) to inspect its role in my career journey.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+
+          <!-- Left Interactive SVG Flight-Arc Map + Active Country Readout -->
+          <div class="lg:col-span-7 exec-card p-5 space-y-4">
+            <div class="flex items-center justify-between gap-2">
+              <span class="font-mono-kicker text-[10px] text-teal-300 font-bold">INTERACTIVE CAREER CORRIDOR MAP (01 SAUDI ARABIA → 09 NEW ZEALAND)</span>
+              <span class="font-mono-kicker text-[10px] text-slate-400">9 Documented Career Locations</span>
+            </div>
+
+            <!-- Stylized World Map SVG with Flight Arcs -->
+            <div class="rounded-xl bg-[#040914] border border-slate-800 p-3 overflow-hidden">
+              <svg viewBox="0 0 800 340" class="w-full h-auto" role="img" aria-label="World map highlighting Mazher Hussain's 9-country career trajectory from Saudi Arabia to New Zealand">
+                <defs>
+                  <linearGradient id="arcGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.85" />
+                    <stop offset="50%" stop-color="#14b8a6" stop-opacity="0.95" />
+                    <stop offset="100%" stop-color="#2dd4bf" stop-opacity="1" />
+                  </linearGradient>
+                </defs>
+                <!-- Subtle grid lines -->
+                <g stroke="#0f172a" stroke-width="1">
+                  <line x1="0" y1="85" x2="800" y2="85" />
+                  <line x1="0" y1="170" x2="800" y2="170" />
+                  <line x1="0" y1="255" x2="800" y2="255" />
+                  <line x1="200" y1="0" x2="200" y2="340" />
+                  <line x1="400" y1="0" x2="400" y2="340" />
+                  <line x1="600" y1="0" x2="600" y2="340" />
+                </g>
+                <!-- Simplified Continental Silhouettes -->
+                <path d="M90,80 L220,75 L250,150 L180,195 L110,145 Z" fill="#0d1b35" opacity="0.65" />
+                <path d="M360,70 L490,65 L520,165 L430,210 L375,155 Z" fill="#0d1b35" opacity="0.65" />
+                <path d="M510,95 L675,90 L690,215 L575,225 L525,165 Z" fill="#0d1b35" opacity="0.65" />
+                <path d="M635,240 L715,235 L725,295 L645,300 Z" fill="#0d1b35" opacity="0.65" />
+
+                <!-- Career Corridor Flight Arcs -->
+                <path d="M475,155 Q330,70 185,125" fill="none" stroke="url(#arcGrad)" stroke-width="1.8" stroke-dasharray="4 3" />
+                <path d="M475,155 Q545,140 605,195" fill="none" stroke="url(#arcGrad)" stroke-width="2.2" />
+                <path d="M605,195 Q685,235 748,298" fill="none" stroke="url(#arcGrad)" stroke-width="2.6" />
+
+                <!-- 9 Career Location Pins -->
+                <g class="cursor-pointer" onclick="selectCountry('USA')"><circle cx="185" cy="125" r="6" fill="#38bdf8" /><text x="185" y="112" text-anchor="middle" fill="#e2e8f0" font-size="10" font-family="JetBrains Mono">USA</text></g>
+                <g class="cursor-pointer" onclick="selectCountry('EGYPT')"><circle cx="442" cy="148" r="5.5" fill="#2dd4bf" /><text x="422" y="142" text-anchor="end" fill="#cbd5e1" font-size="9" font-family="JetBrains Mono">EGYPT</text></g>
+                <g class="cursor-pointer" onclick="selectCountry('SAUDI ARABIA')"><circle cx="475" cy="158" r="7.5" fill="#f59e0b" /><text x="475" y="176" text-anchor="middle" fill="#fde68a" font-size="10" font-weight="bold" font-family="JetBrains Mono">01 SAUDI ARABIA</text></g>
+                <g class="cursor-pointer" onclick="selectCountry('QATAR')"><circle cx="496" cy="150" r="5" fill="#2dd4bf" /><text x="496" y="138" text-anchor="middle" fill="#cbd5e1" font-size="9" font-family="JetBrains Mono">QATAR</text></g>
+                <g class="cursor-pointer" onclick="selectCountry('UAE')"><circle cx="512" cy="156" r="5.5" fill="#2dd4bf" /><text x="536" y="153" text-anchor="start" fill="#cbd5e1" font-size="9" font-family="JetBrains Mono">UAE</text></g>
+                <g class="cursor-pointer" onclick="selectCountry('OMAN')"><circle cx="522" cy="168" r="5" fill="#2dd4bf" /><text x="545" y="172" text-anchor="start" fill="#cbd5e1" font-size="9" font-family="JetBrains Mono">OMAN</text></g>
+                <g class="cursor-pointer" onclick="selectCountry('MALAYSIA')"><circle cx="602" cy="190" r="5.5" fill="#2dd4bf" /><text x="598" y="180" text-anchor="end" fill="#cbd5e1" font-size="9" font-family="JetBrains Mono">MALAYSIA</text></g>
+                <g class="cursor-pointer" onclick="selectCountry('SINGAPORE')"><circle cx="610" cy="202" r="5.5" fill="#2dd4bf" /><text x="618" y="216" text-anchor="start" fill="#cbd5e1" font-size="9" font-family="JetBrains Mono">SINGAPORE</text></g>
+                <g class="cursor-pointer" onclick="selectCountry('NEW ZEALAND')"><circle cx="748" cy="298" r="8.5" fill="#14b8a6" /><text x="735" y="283" text-anchor="end" fill="#5eead4" font-size="11" font-weight="bold" font-family="JetBrains Mono">09 NEW ZEALAND</text></g>
+              </svg>
+            </div>
+
+            <!-- Selected Country Detail Readout -->
+            <div id="countryReadoutBox" class="p-4 rounded-xl bg-slate-950/90 border border-teal-500/40 space-y-1.5" aria-live="polite">
+              <div class="flex items-center justify-between gap-2">
+                <span id="countryDetailTitle" class="font-display font-bold text-base sm:text-lg text-white">09 · New Zealand (Wellington — Long-Term Home Base &amp; Principal Delivery)</span>
+                <span id="countryDetailBadge" class="px-2.5 py-0.5 rounded bg-teal-500/20 text-teal-300 font-mono-kicker text-[10px] font-bold">DESTINATION &amp; HOME BASE</span>
+              </div>
+              <p id="countryDetailText" class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Long-term professional base in Wellington delivering enterprise test leadership, data migration assurance, and release governance across MBIE (NZeTA PayNow, 3DS 2.0, IPONZ SaaS Migration, EPBR), One NZ (NZDF, NZ Police, MSD programme streams), DOC, The Co-operative Bank, and Victoria University of Wellington.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right 9-Country Interactive Flag Grid + Separate Work-Rights / Personal Travel Row -->
+          <div class="lg:col-span-5 space-y-4">
+            <div class="exec-card p-5 space-y-3">
+              <div class="font-mono-kicker text-[10px] text-teal-300 font-bold">
+                THE 9 DOCUMENTED CAREER LOCATIONS (SELECT ANY COUNTRY)
+              </div>
+              <div class="grid grid-cols-3 gap-2.5" id="intlCountriesGrid">
+                <button type="button" onclick="selectCountry('SAUDI ARABIA')" data-country="SAUDI ARABIA" class="country-card-btn p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-teal-400/50 flex flex-col items-center text-center gap-1.5 transition-all">
+                  <img src="assets/country-flags/01-Saudi-Arabia.png" alt="Saudi Arabia Flag" class="w-10 h-6 object-cover rounded shadow" />
+                  <span class="font-mono-kicker text-[10px] font-bold text-white">01 Saudi Arabia</span>
+                  <span class="text-[10px] text-amber-300">Career Start</span>
+                </button>
+                <button type="button" onclick="selectCountry('USA')" data-country="USA" class="country-card-btn p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-teal-400/50 flex flex-col items-center text-center gap-1.5 transition-all">
+                  <img src="assets/country-flags/02-United-States.png" alt="USA Flag" class="w-10 h-6 object-cover rounded shadow" />
+                  <span class="font-mono-kicker text-[10px] font-bold text-white">02 USA</span>
+                  <span class="text-[10px] text-slate-400">Work Travel</span>
+                </button>
+                <button type="button" onclick="selectCountry('UAE')" data-country="UAE" class="country-card-btn p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-teal-400/50 flex flex-col items-center text-center gap-1.5 transition-all">
+                  <img src="assets/country-flags/03-United-Arab-Emirates.png" alt="UAE Flag" class="w-10 h-6 object-cover rounded shadow" />
+                  <span class="font-mono-kicker text-[10px] font-bold text-white">03 UAE</span>
+                  <span class="text-[10px] text-slate-400">Work Travel</span>
+                </button>
+                <button type="button" onclick="selectCountry('EGYPT')" data-country="EGYPT" class="country-card-btn p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-teal-400/50 flex flex-col items-center text-center gap-1.5 transition-all">
+                  <img src="assets/country-flags/04-Egypt.png" alt="Egypt Flag" class="w-10 h-6 object-cover rounded shadow" />
+                  <span class="font-mono-kicker text-[10px] font-bold text-white">04 Egypt</span>
+                  <span class="text-[10px] text-slate-400">Work Travel</span>
+                </button>
+                <button type="button" onclick="selectCountry('QATAR')" data-country="QATAR" class="country-card-btn p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-teal-400/50 flex flex-col items-center text-center gap-1.5 transition-all">
+                  <img src="assets/country-flags/05-Qatar.png" alt="Qatar Flag" class="w-10 h-6 object-cover rounded shadow" />
+                  <span class="font-mono-kicker text-[10px] font-bold text-white">05 Qatar</span>
+                  <span class="text-[10px] text-slate-400">Work Travel</span>
+                </button>
+                <button type="button" onclick="selectCountry('OMAN')" data-country="OMAN" class="country-card-btn p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-teal-400/50 flex flex-col items-center text-center gap-1.5 transition-all">
+                  <img src="assets/country-flags/06-Oman.png" alt="Oman Flag" class="w-10 h-6 object-cover rounded shadow" />
+                  <span class="font-mono-kicker text-[10px] font-bold text-white">06 Oman</span>
+                  <span class="text-[10px] text-slate-400">Work Travel</span>
+                </button>
+                <button type="button" onclick="selectCountry('SINGAPORE')" data-country="SINGAPORE" class="country-card-btn p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-teal-400/50 flex flex-col items-center text-center gap-1.5 transition-all">
+                  <img src="assets/country-flags/07-Singapore.png" alt="Singapore Flag" class="w-10 h-6 object-cover rounded shadow" />
+                  <span class="font-mono-kicker text-[10px] font-bold text-white">07 Singapore</span>
+                  <span class="text-[10px] text-slate-400">Work Travel</span>
+                </button>
+                <button type="button" onclick="selectCountry('MALAYSIA')" data-country="MALAYSIA" class="country-card-btn p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-teal-400/50 flex flex-col items-center text-center gap-1.5 transition-all">
+                  <img src="assets/country-flags/08-Malaysia.png" alt="Malaysia Flag" class="w-10 h-6 object-cover rounded shadow" />
+                  <span class="font-mono-kicker text-[10px] font-bold text-white">08 Malaysia</span>
+                  <span class="text-[10px] text-slate-400">Work Travel</span>
+                </button>
+                <button type="button" onclick="selectCountry('NEW ZEALAND')" data-country="NEW ZEALAND" class="country-card-btn p-2.5 rounded-xl bg-teal-500/15 border border-teal-400/60 flex flex-col items-center text-center gap-1.5 transition-all">
+                  <img src="assets/country-flags/09-New-Zealand.png" alt="New Zealand Flag" class="w-10 h-6 object-cover rounded shadow" />
+                  <span class="font-mono-kicker text-[10px] font-bold text-teal-200">09 New Zealand</span>
+                  <span class="text-[10px] text-teal-300">Home Base</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Separate Work-Rights & Personal Travel Visuals (Kept Distinct from 9-Country Project Delivery Count) -->
+            <div class="exec-card p-4 space-y-2.5">
+              <div class="font-mono-kicker text-[10px] text-slate-400">
+                ADDITIONAL WORK-RIGHTS &amp; PERSONAL TRAVEL VISUALS (SEPARATE FROM 9-COUNTRY DELIVERY COUNT)
+              </div>
+              <div class="grid grid-cols-2 gap-2.5">
+                <button type="button" onclick="selectCountry('AUSTRALIA')" data-country="AUSTRALIA" class="country-card-btn p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-sky-400/40 flex items-center gap-2.5 text-left">
+                  <img src="assets/country-flags/11-Australia-location-or-work-rights.png" alt="Australia Flag" class="w-9 h-6 object-cover rounded shrink-0" />
+                  <div class="min-w-0">
+                    <div class="font-mono-kicker text-[10px] font-bold text-white truncate">Australia</div>
+                    <div class="text-[10px] text-sky-300 truncate">Work Rights (NZ Citizen)</div>
+                  </div>
+                </button>
+                <button type="button" onclick="selectCountry('INDIA')" data-country="INDIA" class="country-card-btn p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-sky-400/40 flex items-center gap-2.5 text-left">
+                  <img src="assets/country-flags/10-India-personal-travel.png" alt="India Flag" class="w-9 h-6 object-cover rounded shrink-0" />
+                  <div class="min-w-0">
+                    <div class="font-mono-kicker text-[10px] font-bold text-white truncate">India</div>
+                    <div class="text-[10px] text-slate-400 truncate">Personal &amp; Family Travel</div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- SECTION 05: 7-STAGE CAREER EVOLUTION TIMELINE                         -->
+    <!-- (MBIE strictly displayed as Test Lead / Data Migration Test Lead)      -->
+    <!-- ===================================================================== -->
+    <section id="timeline" data-scene="05" data-scene-name="Career Timeline" class="py-16 lg:py-24 border-b border-slate-800/80 bg-[#030812]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-8">
+
+        <div class="space-y-2">
+          <div class="font-mono-kicker text-xs text-teal-400 font-semibold">05 / Career Evolution · 2012 – Present</div>
+          <h2 class="font-display font-black text-3xl sm:text-4xl text-white">
+            Seven Stages of Progressive QA &amp; Delivery Leadership
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base max-w-3xl">
+            Select any stage below to inspect my formal progression from systems analysis in Saudi Arabia to leading enterprise data migration and digital release assurance in Wellington, New Zealand.
+          </p>
+        </div>
+
+        <!-- 7-Stage Scrubber Buttons -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-2.5" id="eraScrubber"></div>
+
+        <!-- Active Stage Detail Panel -->
+        <div class="exec-card p-6 sm:p-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+            <div class="lg:col-span-7 space-y-3">
+              <div class="flex flex-wrap items-center gap-2">
+                <span id="eraNumBadge" class="font-display font-black text-4xl sm:text-5xl text-teal-400">07</span>
+                <div>
+                  <div id="eraPeriod" class="font-mono-kicker text-[10px] text-teal-300 font-bold">SEP 2025 – PRESENT · CURRENT ROLE</div>
+                  <h3 id="eraTitle" class="font-display font-black text-2xl sm:text-3xl text-white">
+                    Test Lead / Data Migration Test Lead
+                  </h3>
+                </div>
+              </div>
+              <div id="eraOrg" class="font-mono-kicker text-xs text-sky-300 font-semibold">
+                Ministry of Business, Innovation and Employment (MBIE) · Wellington, New Zealand
+              </div>
+              <p id="eraDesc" class="text-sm sm:text-base text-slate-200 leading-relaxed">
+                Leading a five-person QA team across NZeTA PayNow (Builds 1–3) and 3DS 2.0 payment security, while driving SQL data migration reconciliation, transformation-rule verification, and WCAG 2.1 AA accessibility testing across IPONZ SaaS and EPBR programmes.
+              </p>
+              <div id="eraFocusPills" class="flex flex-wrap gap-2 pt-1 font-mono-kicker text-[10px] text-teal-300"></div>
+            </div>
+            <div class="lg:col-span-5 rounded-xl bg-slate-950/90 border border-slate-800 p-5 space-y-3">
+              <div class="font-mono-kicker text-[10px] text-slate-400 font-bold">HOW I DRIVE IMPACT IN THIS STAGE</div>
+              <div class="grid grid-cols-2 gap-2.5 text-xs">
+                <div class="p-3 rounded-lg bg-slate-900/90 border border-slate-800">
+                  <div class="font-mono-kicker text-[10px] text-teal-300 font-bold">01 · VALIDATE</div>
+                  <div class="text-slate-200 mt-1">Source schemas, API contracts &amp; payment routing rules</div>
+                </div>
+                <div class="p-3 rounded-lg bg-slate-900/90 border border-slate-800">
+                  <div class="font-mono-kicker text-[10px] text-sky-300 font-bold">02 · RECONCILE</div>
+                  <div class="text-slate-200 mt-1">SQL record parity, ETL transformations &amp; GST ledgers</div>
+                </div>
+                <div class="p-3 rounded-lg bg-slate-900/90 border border-slate-800">
+                  <div class="font-mono-kicker text-[10px] text-emerald-300 font-bold">03 · GOVERN</div>
+                  <div class="text-slate-200 mt-1">5-tester coordination, vendor build gates &amp; defect triage</div>
+                </div>
+                <div class="p-3 rounded-lg bg-slate-900/90 border border-slate-800">
+                  <div class="font-mono-kicker text-[10px] text-amber-300 font-bold">04 · RELEASE</div>
+                  <div class="text-slate-200 mt-1">Evidence-backed UAT sign-off &amp; cutover readiness</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- SECTION 06: CONTACT & DIRECT ACTIONS (EMAIL & COPY-EMAIL SIT HERE)    -->
+    <!-- ===================================================================== -->
+    <section id="contact" data-scene="06" data-scene-name="Contact" class="py-16 lg:py-24">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6">
+        <div class="exec-card p-6 sm:p-10 space-y-6 text-center">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/15 border border-teal-400/30 font-mono-kicker text-[10px] text-teal-300 font-bold">
+            Available for Test Lead, Data Migration Test Lead &amp; Release Assurance Roles
+          </div>
+          <h2 class="font-display font-black text-3xl sm:text-5xl text-white">
+            Ready to Assure Your Next Transformation?
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto">
+            Based in Wellington, New Zealand with full New Zealand citizenship, Australian work rights, and NZSIS Confidential clearance experience. Reach out directly or download my CV below.
+          </p>
+
+          <!-- Contact Actions (Email, Copy Email, Phone, LinkedIn, Download CV) -->
+          <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+            <a
+              href="mailto:mazher.khaja313@outlook.co.nz"
+              class="px-5 py-3 rounded-xl bg-teal-400 hover:bg-teal-300 text-slate-950 font-display font-bold text-sm transition-all inline-flex items-center gap-2"
+            >
+              <span>Email Mazher</span>
+              <span class="font-mono text-xs opacity-80">(mazher.khaja313@outlook.co.nz)</span>
+            </a>
+
+            <button
+              id="contactCopyEmailBtn"
+              type="button"
+              onclick="copyEmailAddress(this)"
+              class="px-4 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-100 font-mono-kicker text-xs font-bold transition-colors"
+            >
+              <span id="footerEmailLabel">Copy Email Address</span>
+            </button>
+
+            <button
+              type="button"
+              onclick="openCvModal(this)"
+              class="px-4 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-teal-500/40 text-teal-200 font-mono-kicker text-xs font-bold transition-colors"
+            >
+              Download CV
+            </button>
+
+            <a
+              href="https://www.linkedin.com/in/kmazherhussain"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="px-4 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 font-mono-kicker text-xs font-bold transition-colors"
+            >
+              LinkedIn Profile ↗
+            </a>
+
+            <a
+              href="tel:+64211842439"
+              class="px-4 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 font-mono-kicker text-xs font-bold transition-colors"
+            >
+              +64 211 842 439
+            </a>
+          </div>
+
+          <div class="pt-4 border-t border-slate-800/80 text-[11px] text-slate-400 flex flex-wrap items-center justify-between gap-2">
+            <span>© 2026 Mazher Hussain · Test Lead | Data Migration &amp; Release Assurance</span>
+            <span>NZDF, NZ Police &amp; MSD engagements delivered as programme work via One NZ. Credential badges are custom portfolio graphics.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================= -->
+  <!-- MODAL 1: QUICK SEARCH COMMAND PALETTE (Strict Focus Trap & All Countries)-->
+  <!-- ======================================================================= -->
+  <div
+    id="cmdPaletteModal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="cmdPaletteTitle"
+    class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-start justify-center pt-16 px-4"
+  >
+    <div class="w-full max-w-xl rounded-2xl bg-[#081225] border border-teal-500/40 shadow-2xl overflow-hidden">
+      <div class="p-3.5 border-b border-slate-800 flex items-center justify-between gap-2">
+        <span id="cmdPaletteTitle" class="font-mono-kicker text-[11px] text-teal-300 font-bold">
+          Quick Search · Projects, Skills, Organisations &amp; All 11 Countries
+        </span>
+        <button
+          id="closeCmdPaletteBtn"
+          type="button"
+          onclick="closeCmdPalette()"
+          class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 text-xs font-mono-kicker text-slate-300 border border-slate-700"
+        >
+          ESC ✕
+        </button>
+      </div>
+      <div class="p-3 border-b border-slate-800">
+        <input
+          id="cmdSearchInput"
+          type="text"
+          placeholder="Search NZeTA, IPONZ, One NZ, SQL, Singapore, Egypt, Malaysia, USA..."
+          aria-label="Search portfolio projects, skills, organisations, and countries"
+          class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-sm text-white placeholder-slate-400 focus:outline-none"
+        />
+      </div>
+      <div id="cmdResultsList" role="listbox" class="max-h-80 overflow-y-auto divide-y divide-slate-800/70 p-2"></div>
+    </div>
+  </div>
+
+  <!-- ======================================================================= -->
+  <!-- MODAL 2: CASE STUDY DEEP-DIVE DIALOG (Strict Focus Trap & Filter Safe)  -->
+  <!-- ======================================================================= -->
+  <div
+    id="caseModal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modalTitle"
+    class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4"
+  >
+    <div class="w-full max-w-2xl max-h-[88vh] overflow-y-auto rounded-2xl bg-[#081225] border border-teal-500/40 shadow-2xl p-6 space-y-4">
+      <div class="flex items-start justify-between gap-3 border-b border-slate-800 pb-3">
+        <div>
+          <p id="modalOrg" class="font-mono-kicker text-xs text-teal-400 font-bold"></p>
+          <h3 id="modalTitle" class="font-display font-black text-2xl text-white mt-0.5"></h3>
+        </div>
+        <button
+          id="closeCaseModalBtn"
+          type="button"
+          onclick="closeCaseModal()"
+          class="px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-700 font-mono-kicker text-xs text-slate-200 shrink-0"
+        >
+          Close ✕
+        </button>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-950 border border-slate-800">
+        <div class="font-mono-kicker text-[10px] text-sky-300 font-bold">ARCHITECTURE &amp; ASSURANCE WORKFLOW</div>
+        <p id="modalFlow" class="font-mono text-xs text-slate-200 mt-1 leading-relaxed"></p>
+      </div>
+      <div>
+        <div class="font-mono-kicker text-[10px] text-teal-300 font-bold mb-2">KEY TEST LEADERSHIP &amp; TECHNICAL DELIVERABLES</div>
+        <ul id="modalBullets" class="space-y-2 text-sm text-slate-200 list-disc pl-5 leading-relaxed"></ul>
+      </div>
+      <div class="p-3.5 rounded-xl bg-teal-950/30 border border-teal-500/30">
+        <div class="font-mono-kicker text-[10px] text-teal-300 font-bold">VERIFIED PROGRAMME OUTCOME</div>
+        <p id="modalOutcome" class="text-sm text-white mt-1 leading-relaxed"></p>
+      </div>
+      <div class="pt-2 flex justify-end">
+        <button
+          type="button"
+          onclick="closeCaseModal()"
+          class="px-4 py-2 rounded-lg bg-teal-400 text-slate-950 font-display font-bold text-xs"
+        >
+          Done Reading
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================= -->
+  <!-- MODAL 3: EXECUTIVE CV PREVIEW & DOWNLOAD (Defect #2 & #4 Fixed)         -->
+  <!-- ======================================================================= -->
+  <div
+    id="cvPreviewModal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="cvModalTitle"
+    class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4"
+  >
+    <div class="w-full max-w-3xl max-h-[88vh] overflow-y-auto rounded-2xl bg-[#081225] border border-teal-500/40 shadow-2xl p-6 space-y-5">
+      <div class="flex items-start justify-between gap-3 border-b border-slate-800 pb-4">
+        <div>
+          <span class="font-mono-kicker text-[10px] text-teal-400 font-bold">EXECUTIVE &amp; ATS CV DOWNLOADS</span>
+          <h3 id="cvModalTitle" class="font-display font-black text-2xl text-white mt-0.5">
+            Mazher Hussain — Curriculum Vitae
+          </h3>
+          <p class="text-xs text-slate-300 mt-0.5">
+            Test Lead | Data Migration &amp; Release Assurance · Wellington, New Zealand
+          </p>
+        </div>
+        <button
+          id="closeCvModalBtn"
+          type="button"
+          onclick="closeCvModal()"
+          class="px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-700 font-mono-kicker text-xs text-slate-200 shrink-0"
+        >
+          ESC ✕
+        </button>
+      </div>
+
+      <!-- Download / Print Action Bar -->
+      <div class="flex flex-wrap items-center gap-3 p-4 rounded-xl bg-slate-950 border border-teal-500/30">
+        <a
+          href="Mazher_Hussain_Executive_Master_CV.pdf"
+          download="Mazher_Hussain_Executive_Master_CV.pdf"
+          class="px-4 py-2.5 rounded-xl bg-teal-400 hover:bg-teal-300 text-slate-950 font-display font-bold text-xs sm:text-sm inline-flex items-center gap-2"
+        >
+          <span>Download Executive Master CV (PDF)</span>
+        </a>
+        <button
+          type="button"
+          onclick="window.print()"
+          class="px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 font-mono-kicker text-xs font-bold"
+        >
+          Print / Save Executive Summary PDF
+        </button>
+      </div>
+
+      <!-- Executive CV Summary Snapshot (Strictly uses Test Lead / Data Migration Test Lead for MBIE) -->
+      <div class="space-y-4 text-xs sm:text-sm text-slate-200">
+        <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1.5">
+          <div class="font-mono-kicker text-[10px] text-teal-300 font-bold">EXECUTIVE PROFILE</div>
+          <p class="leading-relaxed">
+            Test Lead and Data Migration Test Lead with 14+ years of international IT and QA experience across New Zealand government, banking, telecommunications, payments, and higher education. Proven track record leading QA teams, authoring complex SQL data migration reconciliation suites, and governing release readiness across flagship digital transformations.
+          </p>
+        </div>
+
+        <div class="space-y-2.5">
+          <div class="font-mono-kicker text-[10px] text-teal-300 font-bold">KEY NEW ZEALAND &amp; INTERNATIONAL CAREER ROLES</div>
+
+          <div class="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800">
+            <div class="font-mono-kicker text-[10px] text-teal-400 font-bold">SEP 2025 – PRESENT · MBIE (WELLINGTON, NZ)</div>
+            <div class="font-bold text-white mt-0.5">Test Lead / Data Migration Test Lead</div>
+            <p class="text-xs text-slate-300 mt-1">
+              Leading a 5-person QA team on NZeTA PayNow (Builds 1–3) &amp; 3DS 2.0 payment enhancements, driving SQL data reconciliation and transformation validation on the IPONZ SaaS Migration, and delivering WCAG 2.1 AA accessibility assurance on EPBR.
+            </p>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800">
+            <div class="font-mono-kicker text-[10px] text-sky-400 font-bold">AUG 2019 – AUG 2025 · ONE NZ (WELLINGTON, NZ)</div>
+            <div class="font-bold text-white mt-0.5">Technical Test Lead</div>
+            <p class="text-xs text-slate-300 mt-1">
+              Directed enterprise mobility, MDM, and telecommunications cutover assurance across major government programme streams (NZDF, New Zealand Police, and MSD — programme work via One NZ).
+            </p>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800">
+            <div class="font-mono-kicker text-[10px] text-slate-400 font-bold">2016 – 2019 · DOC, THE CO-OPERATIVE BANK, WILKINSON &amp; SON, VUW</div>
+            <div class="font-bold text-white mt-0.5">Test Lead / QA Analyst / Senior Applications Test Analyst (VUW)</div>
+            <p class="text-xs text-slate-300 mt-1">
+              Delivered payment &amp; booking platform testing (DOC Great Walks), core banking &amp; digital channels QA (The Co-operative Bank), retail POS/ERP migration (Wilkinson &amp; Son), and enterprise student systems testing (Victoria University of Wellington).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
